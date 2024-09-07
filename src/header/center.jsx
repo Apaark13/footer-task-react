@@ -4,7 +4,11 @@ import "./header.scss"; // Import the CSS file for styling
 const Center = () => {
   return (
     <div className="navbar">
+        <div className="hamburger">
+            <svg focusable="false" viewBox="2 2 24 24" data-enzyme-id="HamburgerMenuIconToggleIcon" role="img" aria-label="Open Menu" data-hb-id="pl-icon" class="_1fr089m0 _1fr089m1"><title>Open Menu</title><path d="M23 14.5H5a.5.5 0 010-1h18a.5.5 0 010 1zM23 20.5H5a.5.5 0 010-1h18a.5.5 0 010 1zM23 8.5H5a.5.5 0 010-1h18a.5.5 0 010 1z"></path></svg>
+        </div>
       <div className="navbar-left">
+
         <div className="logo">
           <a href="/">
             <svg
@@ -139,6 +143,26 @@ const Center = () => {
           </a>
         </div>
       </div>
+
+
+    {/* NAVBAR DOWN */}
+    <div className="navbar-center down">
+        <svg
+          focusable="false"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          data-hb-id="pl-icon"
+          class="_1fr089m0 _1fr089m1"
+        >
+          <path d="M18.75 17.94l-4.53-4.53A5.44 5.44 0 0015.5 9.9a5.51 5.51 0 10-2 4.22l4.5 4.53a.52.52 0 00.71 0 .51.51 0 00.04-.71zM5.5 9.9a4.5 4.5 0 114.5 4.5 4.51 4.51 0 01-4.5-4.5z"></path>
+        </svg>
+        <input
+          type="text"
+          placeholder="Find anything home..."
+          className="search-bar"
+        />
+      </div>
+
     </div>
   );
 };
